@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url(./static/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+	font-family: 'Roboto mono';
+	src: url(./static/RobotoMono-VariableFont_wght.ttf);
+}
+.containerChat {
+  width: 50%;
+  height: 100%;
+  background-color: #1d6fab;
+  background-image: url("./static/animation.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.chat {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 60%;
+  height: 80%;
+  border-radius: 15%/10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentChat {
+  background-color: #053960;
+  width: 90%;
+  height: 95%;
+  border-radius: 15%/10%;
+  display: grid;
+  flex-direction: column;
+}
+.back{
+	width: 35px;
+	margin: 20px;
+}
+.back:hover{
+	transform: scale(1.25);
+}
+.chatty {
+  color: white;
+  font-size: 35px;
+  font-family: "Big Shoulders Display";
+  margin: 20px;
+}
+.content {
+  background-color: white;
+  height: 58vh;
+  margin-top: -30px;
+  border: 3px solid #053960;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+.headerChat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 15px;
+
+}
+.footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -25px;
+}
+.send:hover{
+	transform: scale(1.2);
+}
+.input{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	width: 290px;
+}
+.inputText{
+	width: 230px;
+	height: 20px;
+	outline: none;	
+	border: none;
+	font-family: 'Roboto mono';
+}
+.messageChatty{
+	background-color: #4481ac;
+	width: 80%;
+	margin: 20px;
+	border-radius: 20px;
+	font-family: 'Roboto mono';
+}
+.messageOwn{
+	background-color: #004d87;
+	width: 80%;
+	margin: 20px;
+	border-radius: 20px;
+	font-family: 'Roboto mono';
+}
+.messageOwn p{
+	color: white;
+	margin: 8px;
+	text-align: right;
+}
+.messageChatty p{
+	color: white;
+	margin: 8px;
+	text-align: start;
+}
+.triangleMessageChatty{
+	position: relative;
+	top: 0px;
+	right: 20px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #4481ac;
+}
+.triangleMessageOwn{
+	position: relative;
+	top: 0px;
+	left: 285px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #004d87;
+}
